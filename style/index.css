@@ -17,9 +17,9 @@ body {
     color: #f1f1f1;
     margin: 0;
 }
-hr {
+/* hr {
     border: #bbb;
-}
+} */
 p {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
@@ -181,9 +181,10 @@ ul.menuheader li a:hover {
 ul.menufooter {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     overflow: hidden;
     background-color: #1d1d1d;
+    border-top: 2px solid  #f1f1f1;
 }
 
 /* Footer menu */
@@ -333,7 +334,6 @@ article img {
 }
 
 .contact {
-   
     margin-top: 0;
 }
 
@@ -342,7 +342,6 @@ article img {
     height: 800px;
     background-image: url("../img/day\ trip\ image_220321.jpeg");
     background-size: cover;
-    
 }
 /* .imgcontact img {
     width: 100%;
