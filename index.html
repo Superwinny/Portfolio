@@ -119,7 +119,7 @@
                 <h1>Projets</h1>
 
             </div>
-            <div class="article">
+            <div class="listprojets">
                 <article>
                     <!-- Trigger the Modal -->
                     <img id="imgProjet" src="img/SuperwinnyLogo.svg"
@@ -133,26 +133,46 @@
                             onclick="document.getElementById('myModal').style.display='none'">&times;</span>
 
                         <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="projet1">
+                        <img class="modal-content" id="projet">
 
                         <!-- Modal Caption (Image Text) -->
                         <div id="caption"></div>
                     </div>
                 </article>
                 <article>
-                    <img>
+
+                    <img id="imgProjet" src="img/SuperwinnyLogo.svg"
+                        alt="Logo Projet" width="300" height="200">
+                    <div id="myModal" class="modal">
+                        <span class="close"
+                            onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                        <img class="modal-content" id="projet">
+                        <div id="caption"></div>
+                    </div>
                 </article>
                 <article>
-                    <img>
+                    <img id="imgProjet" src="img/SuperwinnyLogo.svg"
+                        alt="Logo Projet">
                 </article>
                 <article>
-                    <img>
+                    <img id="imgProjet" src="img/SuperwinnyLogo.svg"
+                        alt="Logo Projet">
                 </article>
                 <article>
-                    <img>
+                    <img id="imgProjet" src="img/SuperwinnyLogo.svg"
+                        alt="Logo Projet">
                 </article>
                 <article>
-                    <img>
+                    <img id="imgProjet" src="img/SuperwinnyLogo.svg"
+                        alt="Logo Projet">
+                </article>
+                <article>
+                    <img id="imgProjet" src="img/SuperwinnyLogo.svg"
+                        alt="Logo Projet">
+                </article>
+                <article>
+                    <img id="imgProjet" src="img/SuperwinnyLogo.svg"
+                        alt="Logo Projet">
                 </article>
 
             </div>
@@ -164,59 +184,39 @@
                 <h1>Contact</h1>
 
             </div>
-            <div class="imgcontact">
 
-                <img src="img/day trip image_220321.jpeg" height="50%"
-                    width="50%">
+            <!-- Contact Form -->
+            <div class="formcontact">
+                <form class="form" action="action_page.php">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname"
+                        placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname"
+                        placeholder="Your last name..">
+
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject"
+                        placeholder="Write something.."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+
+                <div class="imgcontact">
+                </div>
             </div>
 
+
         </section>
 
-        <!-- Contact Form -->
-        <section id="fcf-form">
-
-
-            <form id="fcf-form-id" class="fcf-form-class" method="post"
-                action="contact-form-process.php">
-
-                <div class="fcf-form-group">
-                    <label for="Name" class="fcf-label">Your name</label>
-                    <div class="fcf-input-group">
-                        <input type="text" id="Name" name="Name"
-                            class="fcf-form-control" required>
-                    </div>
-                </div>
-
-                <div class="fcf-form-group">
-                    <label for="Email" class="fcf-label">Your email
-                        address</label>
-                    <div class="fcf-input-group">
-                        <input type="email" id="Email" name="Email"
-                            class="fcf-form-control" required>
-                    </div>
-                </div>
-
-                <div class="fcf-form-group">
-                    <label for="Message" class="fcf-label">Your message</label>
-                    <div class="fcf-input-group">
-                        <textarea id="Message" name="Message"
-                            class="fcf-form-control" rows="6" maxlength="3000"
-                            required></textarea>
-                    </div>
-                </div>
-
-                <div class="fcf-form-group">
-                    <button type="submit" id="fcf-button"
-                        class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send
-                        Message</button>
-                </div>
 
 
 
-            </form>
-        </section>
-
-        </div>
 
     </main>
     <footer>
