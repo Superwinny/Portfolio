@@ -135,7 +135,7 @@ p {
     justify-content: space-between;
     align-items: flex-end;
     display: flex;
-    border-bottom: 2px solid #dde8f0;
+    border-bottom: 3px solid #f1f1f1;
     z-index: 9999;
 }
 #img-logo {
@@ -184,7 +184,7 @@ ul.menufooter {
     padding: 20px;
     overflow: hidden;
     background-color: #1d1d1d;
-    border-top: 2px solid  #f1f1f1;
+    border-top: 3px solid #f1f1f1;
 }
 
 /* Footer menu */
@@ -194,13 +194,13 @@ ul.menufooter li {
 
 ul.menufooter li a {
     display: block;
-    color: #dde8f0;
+    color:#f1f1f1;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 20px;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-family: "Solitreo", cursive;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 /* Change the link color to #111 (black) on hover */
