@@ -25,9 +25,9 @@ span.onclick = function () {
 }
 
 
-const menuburger = document.querySelector(".menunburger")
-const navbar = document.querySelector("#navbar")
+// const menuburger = document.querySelector(".menunburger")
+// const navbar = document.querySelector("#navbar")
 
-menuburger.addEventListener('click',()=>{
-navbar.classList.toggle('mobile-menu')
-})
+// menuburger.addEventListener('click',()=>{
+// navbar.classList.toggle('mobile-menu')
+// })

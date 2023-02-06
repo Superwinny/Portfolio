@@ -201,7 +201,7 @@ ul.menufooter {
 
 /* Footer menu */
 ul.menufooter li {
-    float: left;
+   display: flex;
 }
 
 ul.menufooter li a {
@@ -213,6 +213,11 @@ ul.menufooter li a {
     font-family: "Roboto", sans-serif;
     font-family: "Solitreo", cursive;
     font-size: 16px;
+}
+ul.menufooter img{
+    display: flex;
+    font-size: 2px;
+
 }
 
 /* Change the link color to #111 (black) on hover */
