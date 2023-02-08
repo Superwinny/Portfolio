@@ -53,12 +53,12 @@ p {
 /* NavBar menu */
 
 
-.menuburger{
+/* .menuburger{
     display: none;
     max-width: 40px;
     top: 50px;
     right: 50px;
-}
+} */
 
 ul.menuheader {
     display:flex ;
@@ -160,7 +160,7 @@ ul.menufooter li a:hover {
     transform: skew(0deg, -1deg);
 }
 .img-aboutme {
-    margin-top: 0;
+    margin-top: -50px;
     margin-right: 200px;
 }
 
