@@ -149,7 +149,7 @@ ul.menufooter li a:hover {
 #aboutme::after {
     bottom: 0;
     position: absolute;
-    margin-bottom: -350px;
+    margin-bottom: -100px;
     content: "";
     background: rgb(28, 249, 212);
     height: 70px;
