@@ -1,8 +1,15 @@
-// Get the modal
+
 const projets = document.querySelectorAll(`.listprojets article`);
 const modal = document.getElementById(`myModal`);
 const modalImg = document.getElementById(`modal-content`);
 const captionText = document.getElementById(`caption`);
+const menuburger = document.querySelector(".menuburger")
+const navbar = document.getElementById("navbar")
+
+
+menuburger.addEventListener('click',() => {
+  navbar.classList.toggle('mobile-menu')
+})
 
 projets.forEach(projet => {
   const img = projet.querySelector(`.imgProjet`)
@@ -24,12 +31,8 @@ span.onclick = function () {
   document.getElementById(`navbar`).style.display = "flex"
 
 }
-const menuburger = document.querySelector(".menuburger")
-const navbar = document.querySelector("#navbar")
 
-menuburger.addEventListener('click',()=>{
-navbar.classList.toggle('mobile-menu')
-})
+
 
 
 // Initialize and add the map
