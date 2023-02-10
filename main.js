@@ -1,23 +1,31 @@
 
-const projets = document.querySelectorAll(`.listprojets article`);
-const modal = document.getElementById(`myModal`);
-const modalImg = document.getElementById(`modal-content`);
-const captionText = document.getElementById(`caption`);
-const menuburger = document.querySelector(".menuburger")
-const navbar = document.getElementById("navbar")
+const projets = document.querySelectorAll(".listprojets article");
+const modal = document.getElementById("myModal");
+const modalImg = document.getElementById("modal-content");
+const captionText = document.getElementById("caption");
+const menuburger = document.querySelector(".menuburger");
+const navbar = document.getElementById("navbar");
+const linknav = document.querySelectorAll(".menuheader a");
 
 
-menuburger.addEventListener('click',() => {
-  navbar.classList.toggle('mobile-menu')
+linknav.forEach((link) => {
+  link.addEventListener("click" , () => {
+    navbar.classList.remove("mobile-menu")
+  })
+})
+
+
+menuburger.addEventListener("click",() => {
+  navbar.classList.toggle("mobile-menu")
 })
 
 projets.forEach(projet => {
-  const img = projet.querySelector(`.imgProjet`)
+  const img = projet.querySelector(".imgProjet")
   img.onclick = function () {
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
-    document.getElementById(`navbar`).style.display = "none"
+    document.getElementById("navbar").style.display = "none"
     document.body.style.overflow = "hidden";
   }
 })
@@ -28,7 +36,7 @@ let span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
   modal.style.display = "none";
   document.body.style.overflow = "auto";
-  document.getElementById(`navbar`).style.display = "flex"
+  document.getElementById("navbar").style.display = "flex"
 
 }
 
