@@ -147,9 +147,9 @@ ul.menufooter li a:hover {
     transform: skew(0deg, -1deg);
 }
 .img-aboutme {
-    margin-top: -30px;
+    margin-top: -40px;
     margin-right: 100px;
-    width: 33%;
+    width: 31%;
    
 }
 
@@ -410,7 +410,7 @@ input[type="submit"]:hover {
    } 
    .img-aboutme{
     margin-right:100px;
-    margin-top: -40px;
+    margin-top: -15px;
 }
 }
 @media screen and (max-width:1316px){
@@ -428,7 +428,7 @@ input[type="submit"]:hover {
         padding-left: 80px;
     }
     .img-aboutme{
-       margin-top:-25px;
+      
         margin-right: 80px;
        }
        p{
@@ -451,7 +451,7 @@ input[type="submit"]:hover {
  
     .img-aboutme{
         margin-top:-15px;
-         width:38%;
+         width:33%;
         }
         h1{
             font-size: 40px;
