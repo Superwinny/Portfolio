@@ -402,6 +402,16 @@ input[type="submit"]:hover {
         
       }
 @media screen and (max-width:1530px) {
+    #aboutme::after {
+       
+        margin-bottom: -110px;
+     
+    }
+    #skills::after {
+      
+        margin-bottom: -220px;
+      
+    }
 
    ul.menuheader li{
        font-size: 27px;
@@ -420,6 +430,10 @@ input[type="submit"]:hover {
 }
 }
 @media screen and (max-width:1316px){
+   
+    #aboutme::after { 
+        margin-bottom: -100px;
+    }
     .skillsicons {
         flex-basis: 27%;
         gap: 14px;
@@ -427,7 +441,6 @@ input[type="submit"]:hover {
         margin-top: 190px;
     }
     
-
     ul.menuheader li{
         margin-left: 60px;
         font-size: 24px;
@@ -452,6 +465,11 @@ input[type="submit"]:hover {
     }
 }
 @media screen and (max-width:1100px){
+    #skills::after {
+      
+        margin-bottom: -180px;
+      
+    }
     .skillsicons {
       
         margin-right: 190px;
