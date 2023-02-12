@@ -239,9 +239,9 @@ article img {
 
 
 #contact {
-    margin-top: 150px;
+    margin-top: 130px;
     position: relative;
-    padding:  0 200px;
+    padding:  0 100px;
     padding-top: 140px;
   
 }
@@ -290,7 +290,7 @@ input[type="submit"]:hover {
 .formcontact {
     /* width: 100%; */
     justify-content: space-between;
-    margin-top: 150px;
+    margin-top: 120px;
     display: flex;
     align-items: stretch;
     margin-bottom: 100px;
@@ -399,6 +399,9 @@ input[type="submit"]:hover {
         
       }
 @media screen and (max-width:1530px) {
+     .form{
+        max-width: 500px;
+    } 
     #projets {
         margin-top:150px;
     }
@@ -439,6 +442,13 @@ input[type="submit"]:hover {
 }
 }
 @media screen and (max-width:1316px){
+    #imgcontact {
+        flex-basis: 45%;
+    }
+    .form{
+        max-width: 450px;
+    }
+    
     #projets {
         margin-top:150px;
     }
@@ -484,6 +494,13 @@ input[type="submit"]:hover {
     }
 }
 @media screen and (max-width:1100px){
+    .form{
+        max-width: 400px;
+       
+        } 
+        .formcontact{
+            margin-top: 100px;
+        }
     .modal { 
         padding-top: 140px; 
    
@@ -532,6 +549,15 @@ input[type="submit"]:hover {
     }
    
 @media screen and (max-width:1000px){
+    #imgcontact {
+        flex-basis: 42%;
+      
+    
+    }
+    .form{
+        max-width: 350px;
+       
+        } 
     .modal { 
         padding-top: 160px; 
    
@@ -564,6 +590,27 @@ input[type="submit"]:hover {
    
    
 @media screen and (max-width:900px){
+    #contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    .formcontact{
+        margin-top: 50px;
+        flex-wrap: wrap;
+    
+    }
+    .form{
+        max-width:100%;
+       
+        } 
+    #imgcontact {
+        margin-top: 50px;
+        flex-basis: 100%;
+    
+    }
     .modal { 
         padding-top: 180px; 
    
