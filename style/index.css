@@ -80,6 +80,7 @@ ul.menuheader li a:hover {
 
 /* Footer  */
 
+
 ul.menufooter {
     display: flex;
     list-style-type: none;
@@ -105,11 +106,7 @@ ul.menufooter li a {
     font-family: "Solitreo", cursive;
     font-size: 16px;
 }
-ul.menufooter img{
-    display: flex;
-    font-size: 2px;
 
-}
 
 /* Change the link color on hover */
 ul.menufooter li a:hover {
@@ -136,7 +133,7 @@ ul.menufooter li a:hover {
 #aboutme::after {
     bottom: 0;
     position: absolute;
-    margin-bottom: -130px;
+    margin-bottom: -160px;
     content: "";
     background: rgb(28, 249, 212);
     height: 70px;
@@ -157,7 +154,7 @@ ul.menufooter li a:hover {
 #skills::after {
     bottom: 0;
     position: absolute;
-    margin-bottom: -390px;
+    margin-bottom: -410px;
     content: "";
     background: rgb(28, 249, 212);
     height: 70px;
