@@ -90,7 +90,23 @@ ul.menuheader li a:hover {
 
 
 
-
+/* ul.iconsfooter{
+    display:flex;
+    list-style-type: none;
+    margin: 0;
+    justify-content: flex-end;
+    align-items: flex-start;
+   padding-right: 60px;
+  
+}
+ul.iconsfooter li img{
+  width: 30px;
+  padding-right: 40px;
+  
+} */
+ul.menufooter li {
+    display: flex;
+}
 
 ul.menufooter {
     display: flex;
@@ -101,15 +117,17 @@ ul.menufooter {
     background-color: #1d1d1d;
     border-top: 3px solid #f1f1f1;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+    
 }
 /* Footer menu */
 
-
+ul.menufooter li img{
+    width: 35px;
+    align-self: flex-end;
+}
 
 ul.menufooter li a {
-
-   
     color:#f1f1f1;
     text-align: center;
     padding: 20px 20px;
@@ -279,6 +297,7 @@ article img {
 
 /* Form Contact */
 
+
 input[type="text"],
 select,
 textarea {
@@ -305,7 +324,7 @@ input[type="submit"]:hover {
 }
 
 .formcontact {
-    /* width: 100%; */
+    
     justify-content: space-between;
     margin-top: 120px;
     display: flex;
@@ -607,6 +626,16 @@ input[type="submit"]:hover {
    
    
 @media screen and (max-width:900px){
+    ul.menufooter{
+        justify-content: center;
+        
+    }
+    ul.menufooter li a{
+       padding-right: 50px;
+        
+    }
+   
+    
     #contact{
         padding-left: 0;
         padding-right: 0;
