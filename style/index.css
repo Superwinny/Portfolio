@@ -951,6 +951,9 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width:380px) {
+    h1{
+        font-size: 35px;
+    }
 
     .form {
 
