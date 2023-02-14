@@ -496,7 +496,7 @@
         }
 
         .skillsicons {
-            flex-basis: 26%;
+            flex-basis: 28%;
             gap: 15px;
             margin-right: 160px;
             margin-top: 235px;
@@ -608,7 +608,7 @@
         .skillsicons {
           
             margin-right: 170px;
-            margin-top: 200px;
+            margin-top: 180px;
         }
 
         .img-aboutme {
@@ -655,8 +655,8 @@
         }
 
         .skillsicons {
-            flex-basis: 26%;
-            margin-right: 170px;
+            margin-right: 150px;
+            margin-top: 190px;
 
         }
 
@@ -683,8 +683,8 @@
             margin: 0;
             flex-basis: 35%;
             padding-left: 35px;
-           margin-bottom: 120px;
-           margin-top: 50px;
+            margin-bottom: 90px;
+            margin-top: 50px;
         
             
         }
@@ -901,6 +901,14 @@
         }
 
     }
+    @media screen and (max-width:650px) {
+        .skillsicons {
+            flex-basis: 40%;
+            padding-left:5px;
+            
+        }
+
+    }
 
     @media screen and (max-width:550px) {
         .skillsicons {
@@ -937,7 +945,7 @@
 
         #navbar .menuburger {
             top: 50px;
-            right: 50   px;
+            right: 35px;
         }
 
     
@@ -981,6 +989,15 @@
     }
 
     @media screen and (max-width:380px) {
+        #navbar .menuburger {
+           
+            right: 10px;
+        }
+        #navbar #img-logo {
+
+            padding-left: 0;
+        }
+
         .skillsicons {
            
             flex-basis: 60%;
