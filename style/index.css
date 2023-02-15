@@ -130,7 +130,7 @@
         text-decoration: none;
         font-family: "Roboto", sans-serif;
         font-family: "Solitreo", cursive;
-        font-size: 16px;
+        font-size: 18px;
     }
 
 
@@ -734,7 +734,7 @@
 
         ul.menufooter li a {
             margin-right: 20px;
-            font-size: 14px;
+            font-size: 18px;
             padding: 0;
 
 
@@ -973,7 +973,7 @@
 
         ul.menufooter li a {
             margin-top: 10px;
-            font-size: 14px;
+            font-size: 16px;
             padding: 0;
 
 
@@ -983,13 +983,13 @@
             justify-content: flex-end;
             flex-direction: column;
             align-items: flex-end;
-            margin-top: -175px;
+            margin-top: -185px;
 
         }
 
         ul.iconsfooter li img {
             width: 18px;
-            margin-top: 10px;
+            margin-top: 12px;
 
         }
 
