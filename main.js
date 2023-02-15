@@ -8,6 +8,7 @@ const navbar = document.getElementById("navbar");
 const linknav = document.querySelectorAll(".menuheader a");
 
 
+
 linknav.forEach((link) => {
   link.addEventListener("click" , () => {
     navbar.classList.remove("mobile-menu")
