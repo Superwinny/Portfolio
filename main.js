@@ -1,4 +1,9 @@
 
+(function($){
+  
+})(jQuery)
+
+
 const projets = document.querySelectorAll(".listprojets article");
 const modal = document.getElementById("myModal");
 const modalImg = document.getElementById("modal-content");
@@ -34,15 +39,12 @@ projets.forEach(projet => {
 let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
-  document.body.style.overflow = "auto";
-  document.getElementById("navbar").style.display = "flex"
+// span.onclick = function () {
+//   modal.style.display = "none";
+//   document.body.style.overflow = "auto";
+//   document.getElementById("navbar").style.display = "flex"
 
-}
-
-
-
+// }
 
 // Initialize and add the map
 function initMap() {
