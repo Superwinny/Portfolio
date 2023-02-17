@@ -1,13 +1,31 @@
 
 (function($){
+
+  $(function() {
+    $('.listprojets').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      tLoading: 'Loading image #%curr%...',
+      mainClass: 'mfp-img-mobile',
+      gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+      },
+      image: {
+        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+        titleSrc: function(item) {
+          return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+        }
+      }
+    });
+  });
+  
   
 })(jQuery)
 
 
-const projets = document.querySelectorAll(".listprojets article");
-const modal = document.getElementById("myModal");
-const modalImg = document.getElementById("modal-content");
-const captionText = document.getElementById("caption");
+
 const menuburger = document.querySelector(".menuburger");
 const navbar = document.getElementById("navbar");
 const linknav = document.querySelectorAll(".menuheader a");
@@ -25,26 +43,6 @@ menuburger.addEventListener("click",() => {
   navbar.classList.toggle("mobile-menu")
 })
 
-projets.forEach(projet => {
-  const img = projet.querySelector(".imgProjet")
-  img.onclick = function () {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-    document.getElementById("navbar").style.display = "none"
-    document.body.style.overflow = "hidden";
-  }
-})
-// Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-// span.onclick = function () {
-//   modal.style.display = "none";
-//   document.body.style.overflow = "auto";
-//   document.getElementById("navbar").style.display = "flex"
-
-// }
 
 // Initialize and add the map
 function initMap() {
