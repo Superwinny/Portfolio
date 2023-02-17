@@ -50,14 +50,11 @@
        height: 200px;
       }
       .mfp-image-holder .mfp-close, .mfp-iframe-holder button.mfp-close {
-          padding-right: 100px;
+          padding-right: 50px;
           font-size:100px;
           color: rgb(28, 249, 212);
       }
-      .mfp-wrap {
-        /* border: solid 4px rgb(28, 249, 212); */
-        
-      }
+     
       .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close{
          overflow: hidden;
        
@@ -71,12 +68,18 @@
       }
       .mfp-title {
         text-align: center;
-        line-height: 18px;
+        line-height: 40px;
         color: #f1f1f1;
         padding-right: 0;
       }
       .mfp-bottom-bar {
         margin-top: -200px;
+    }
+    .mfp-figure small {
+        color:#f1f1f1;
+        display: block;
+        font-size: 16px;
+       
     }
     
     /* NavBar */
