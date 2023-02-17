@@ -1,6 +1,14 @@
 
 (function($){
 
+// $("input[required], textarea[required]").on("blur", function(){
+
+// };
+
+
+
+
+
   $(function() {
     $('.listprojets').magnificPopup({
       delegate: 'a',
@@ -15,9 +23,10 @@
       image: {
         tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
         titleSrc: function(item) {
-          return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+          return item.el.attr('title') + '<small>by Superwinny</small>';
         }
       }
+      
     });
   });
   

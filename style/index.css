@@ -19,17 +19,65 @@
         font-size: 20px;
     }
    
+    
+
+
+    /* Magnific Popup Plugin Modification */
+
+
+
     .mfp-content{
+       
+        position: initial;
         max-width: 1200px;
         min-width: 500px;
-        
+
     }
     img.mfp-img {
-        box-sizing: content-box;
-        padding:0;
+        box-sizing: unset;
         margin: 0;
 }
 
+    .mfp-container {
+        background-color: #1d1d1d ;
+        border-left: solid 6px rgb(28, 249, 212);
+        border-top: solid 6px rgb(28, 249, 212);
+        border-bottom: solid 6px  #ff52b4;
+        border-right: solid 6px  #ff52b4;
+    }
+    .mfp-close {
+       width: 200px;
+       height: 200px;
+      }
+      .mfp-image-holder .mfp-close, .mfp-iframe-holder button.mfp-close {
+          padding-right: 100px;
+          font-size:100px;
+          color: rgb(28, 249, 212);
+      }
+      .mfp-wrap {
+        /* border: solid 4px rgb(28, 249, 212); */
+        
+      }
+      .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close{
+         overflow: hidden;
+       
+      }
+      .mfp-counter {
+        right: 20px;
+        color: #f1f1f1;
+        font-size: 20px;
+        line-height: 20px;
+        padding-top: 160px;
+      }
+      .mfp-title {
+        text-align: center;
+        line-height: 18px;
+        color: #f1f1f1;
+        padding-right: 0;
+      }
+      .mfp-bottom-bar {
+        margin-top: -200px;
+    }
     
     /* NavBar */
 
