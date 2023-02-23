@@ -23,9 +23,8 @@
 
 
     /* Magnific Popup Plugin Modification */
-
-
-
+ 
+    
     .mfp-content{
        
         position: initial;
@@ -367,7 +366,7 @@
     input[type="submit"]:hover {
         background-color: #04aa6d;
     }
-
+   
     .formcontact {
 
         justify-content: space-between;
@@ -403,6 +402,46 @@
         display: none;
 
     }
+
+
+
+    /* BLog  exo WP*/
+
+
+    #blog {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        padding-top: 150px;
+    }
+
+    .blog-intro {
+        padding-left: 100px;
+        margin-top: 0;
+        flex-basis: 33%;
+        flex-shrink: 1;
+        width: 50%;
+    }
+
+    #blog::after {
+        bottom: 0;
+        position: absolute;
+        margin-bottom: -160px;
+        content: "";
+        background: rgb(28, 249, 212);
+        height: 70px;
+        display: block;
+        width: 100%;
+        /* transform: rotate(-2deg); */
+        transform-origin: left top;
+        transform: skew(0deg, -1deg);
+    }
+
+
+
+
 
     @media screen and (max-width:1530px) {
         .modal{
