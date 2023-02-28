@@ -18,9 +18,45 @@ body {
 }
 
 p {
+	text-align: justify;
 	font-family: "Poppins", sans-serif;
 	font-size: 20px;
 }
+
+
+
+/* Light Mode */
+
+
+/* .btn-toggle{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	border: 2px solid blue;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	color: black;
+
+}
+body.dark{
+	color: black;
+	background: white;
+}
+body.dark .btn-toggle {
+	background:black;
+	color: white;
+}
+body.dark #navbar{
+	background-color: white;
+}
+body.dark .menuheader{
+	background-color: white;
+} */
+
 
 
 
