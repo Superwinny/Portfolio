@@ -5,7 +5,7 @@ h1 {
 	font-family: "Shrikhand", cursive;
 	color: #13fdd7;
 	font-size: 60px;
-	-webkit-text-stroke: 2px #13fdd7;
+	-webkit-text-stroke: 1px #13fdd7;
 	text-transform: uppercase;
 	/* Enlève la couleur intérieur du text */
 	-webkit-text-fill-color: transparent;
@@ -28,7 +28,7 @@ p {
 /* Light/Dark Mode */
 
 
-/* .btn-toggle{
+.btn-toggle{
 	position: absolute;
 	width: 80px;
 	height: 80px;
@@ -42,23 +42,82 @@ p {
 	color: black;
 
 }
-body.dark{
-	color: black;
-	background: white;
+body.light{
+	color: #1d1d1d;;
+	background: #f2f2f2 ;
 }
-body.dark .btn-toggle {
-	background:black;
-	color: white;
+body.light .btn-toggle {
+	background:#1d1d1d;
+	color: #f2f2f2;
 }
-body.dark #navbar{
-	background-color: white;
+body.light #navbar{
+	background-color: #f2f2f2;
+	border-bottom: 3px solid #1d1d1d;
 }
-body.dark .menuheader{
-	background-color: white;
+body.light ul.menuheader{
+	background-color: #f2f2f2;
+}
+body.light ul.menuheader li a{
+	color:#1d1d1d;
+}
+body.light h1{
+	color: #033E8C;
+	-webkit-text-stroke: 1px #033E8C;
+}
+body.light #aboutme::after{
+	background-color:#033E8C;
+}
+body.light #skills::after{
+	background-color:  #033E8C;
+}
+body.light #projets::after{
+	background-color:#033E8C;
+}
+body.light ul.menufooter{
+	background-color: #f2f2f2;
+	border-top: 3px solid #1d1d1d;
+}
+body.light ul.menufooter li a{
+	color: #1d1d1d;
+}
+
+body.light input[type="submit"] {
+	background-color:#033E8C;
+	color: #f2f2f2;
+	
+}
+/* body.light input[type="text"], select, textarea{
+	border: 1px solid #157EBF !important ;
 } */
 
+body.light input[type="submit"]:hover {
+	background-color: #54BFB5;
+}
+body.light ul.menuheader li a:hover {
+	color:#157EBF
+}
+body.light ul.menufooter li a:hover {
+	color:#157EBF
+}
+body.light .mfp-title{
+	color: #1d1d1d;
 
+}
+body.light .mfp-figure small{
+	color: #1d1d1d;
 
+}
+body.light .mfp-counter{
+	color: #1d1d1d;
+
+}
+body.light .mfp-container{
+	background-color: #f2f2f2;;
+    border: solid 4px #033E8C;
+}
+ body.light .mfp-image-holder .mfp-close, .mfp-iframe-holder button.mfp-close{
+	color: #157EBF;
+ }
 
 
 /* Magnific Popup Plugin Modification */
@@ -77,7 +136,7 @@ img.mfp-img {
 
 .mfp-container {
 	background-color: #1d1d1d ;
-	border:  solid 2px rgb(28, 249, 212);
+	border:  solid 4px rgb(28, 249, 212);
 }
 .mfp-close {
    width: 200px;
