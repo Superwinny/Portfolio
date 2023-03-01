@@ -1,12 +1,7 @@
 
 (function($){
 
-// $("input[required], textarea[required]").on("blur", function(){
-
-// };
-
-
-
+// Function Pour Jquery Modal 
 
 
   $(function() {
