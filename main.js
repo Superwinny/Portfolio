@@ -1,11 +1,11 @@
 
-(function($){
+(function ($) {
 
-// Function Pour Jquery Modal 
+  // Function Pour Jquery Modal 
 
 
-  $(function() {
-    $(".listprojets article").each(function() {
+  $(function () {
+    $(".listprojets article").each(function () {
       $(this).magnificPopup({
         delegate: 'a',
         type: 'image',
@@ -14,44 +14,56 @@
         gallery: {
           enabled: true,
           navigateByImgClick: true,
-          preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+          preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
         },
         image: {
           tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-          titleSrc: function(item) {
+          titleSrc: function (item) {
             return item.el.attr('title') + '<small>by Superwinny</small>';
           }
         }
-        
+
       });
 
     })
-   
+
   });
-  
-  
+
+
 })(jQuery)
 
 
 // Fonction pour dark/light mode
 
- const btnToggle = document.querySelector(".btn-toggle");
- btnToggle.addEventListener("click", () =>{
+const btnToggle = document.querySelector(".btn-toggle");
+btnToggle.addEventListener("click", () => {
 
-    const body = document.body;
-      if (body.classList.contains("dark")){
-        body.classList.add("light")
-        body.classList.remove("dark")
-        btnToggle.innerHTML = "Go Dark"
+  const body = document.body;
+  if (body.classList.contains("dark")) {
+    body.classList.add("light")
+    body.classList.remove("dark")
+    btnToggle.innerHTML = "Go Dark"
 
-    }else if(body.classList.contains("light")){
-        body.classList.add("dark")
-        body.classList.remove("light")
-        btnToggle.innerHTML = "Go Light"
-    }
+  } else if (body.classList.contains("light")) {
+    body.classList.add("dark")
+    body.classList.remove("light")
+    btnToggle.innerHTML = "Go Light"
+  }
 
 
 })
+
+// Function Change Img
+
+const image = document.getElementById("img-logo");
+function changerImage() {
+  if (image.getAttribute('src') == "img/SuperwinnyLogo.svg") {
+    image.src = "img/SuperwinnyLogo-Light.svg";
+  }
+  else {
+    image.src = "img/SuperwinnyLogo.svg";
+  }
+}
 
 
 
@@ -64,13 +76,13 @@ const linknav = document.querySelectorAll(".menuheader a");
 
 
 linknav.forEach((link) => {
-  link.addEventListener("click" , () => {
+  link.addEventListener("click", () => {
     navbar.classList.remove("mobile-menu")
   })
 })
 
 
-menuburger.addEventListener("click",() => {
+menuburger.addEventListener("click", () => {
   navbar.classList.toggle("mobile-menu")
 })
 

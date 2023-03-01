@@ -195,6 +195,12 @@ img.mfp-img {
 	height: 150px;
 	bottom: 100px;
 }
+#img-logo-light {
+	display: none;
+	padding-left: 100px;
+	height: 150px;
+	bottom: 100px;
+}
 
 
 /* NavBar menu */
