@@ -1,11 +1,21 @@
-
+/*
+Theme Name: Portfolio Davide Dos Santos 
+Author: Superwinnny
+Description: Theme pour le cour de wordpress 
+License: GNU General Public License v2
+Text Domain: Portfolio.DDS
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 
 h1 {
 	font-family: "Shrikhand", cursive;
 	color: #13fdd7;
 	font-size: 60px;
-	-webkit-text-stroke: 1px #13fdd7;
+	-webkit-text-stroke: 2px #13fdd7;
 	text-transform: uppercase;
 	/* Enlève la couleur intérieur du text */
 	-webkit-text-fill-color: transparent;
@@ -18,14 +28,15 @@ body {
 }
 
 p {
-	text-align: justify;
 	font-family: "Poppins", sans-serif;
 	font-size: 20px;
 }
 
 
 
-/* Light/Dark Mode */
+/**********************************************************/
+/******** Light/Dark Mode **************/
+/**********************************************************/
 
 
 .btn-toggle{
@@ -120,7 +131,11 @@ body.light .mfp-container{
  }
 
 
-/* Magnific Popup Plugin Modification */
+
+/**********************************************************/
+/******** Magnific Popup Modification Plugin  **************/
+/**********************************************************/
+
 
 
 .mfp-content{
@@ -136,7 +151,7 @@ img.mfp-img {
 
 .mfp-container {
 	background-color: #1d1d1d ;
-	border:  solid 4px rgb(28, 249, 212);
+	border:  solid 2px rgb(28, 249, 212);
 }
 .mfp-close {
    width: 200px;
@@ -175,7 +190,11 @@ img.mfp-img {
    
 }
 
-/* NavBar */
+
+/**********************************************************/
+/******** Navbar **************/
+/**********************************************************/
+
 
 #navbar {
 	background-color: #1d1d1d;
@@ -203,7 +222,10 @@ img.mfp-img {
 }
 
 
-/* NavBar menu */
+
+/**********************************************************/
+/******** Navbar Menu **************/
+/**********************************************************/
 
 ul.menuheader {
 	display: flex;
@@ -237,7 +259,10 @@ ul.menuheader li a:hover {
 	text-decoration: none;
 }
 
-/* Footer  */
+
+/**********************************************************/
+/******** Footer **************/
+/**********************************************************/
 
 ul.iconsfooter {
 	display: flex;
@@ -270,7 +295,10 @@ ul.menufooter {
 	align-items: flex-start;
 }
 
-/* Footer menu */
+
+/**********************************************************/
+/******** Footer Menu **************/
+/**********************************************************/
 
 ul.menufooter li a {
 	color: #f1f1f1;
@@ -287,7 +315,10 @@ ul.menufooter li a:hover {
 	color: #ff52b4;
 }
 
-/* Section About-me */
+
+/**********************************************************/
+/******** Section About-me **************/
+/**********************************************************/
 
 #aboutme {
 	margin-top: 50px;
@@ -309,10 +340,10 @@ ul.menufooter li a:hover {
 #aboutme::after {
 	bottom: 0;
 	position: absolute;
-	margin-bottom: -160px;
+	margin-bottom: -120px;
 	content: "";
 	background: rgb(28, 249, 212);
-	height: 70px;
+	height: 60px;
 	display: block;
 	width: 100%;
 	transform-origin: left top;
@@ -326,14 +357,18 @@ ul.menufooter li a:hover {
 
 }
 
-/* Section Skills */
+
+/**********************************************************/
+/******** Section Skills **************/
+/**********************************************************/
+
 #skills::after {
 	bottom: 0;
 	position: absolute;
-	margin-bottom: -410px;
+	margin-bottom: -360px;
 	content: "";
 	background: rgb(28, 249, 212);
-	height: 70px;
+	height: 60px;
 	display: block;
 	width: 100%;
 	/* transform: rotate(-2deg); */
@@ -347,7 +382,7 @@ ul.menufooter li a:hover {
 	justify-content: space-between;
 	align-items: flex-start;
 	position: relative;
-	padding-top: 50px;
+	padding-top: 70px;
 }
 
 .skillstext {
@@ -372,7 +407,11 @@ ul.menufooter li a:hover {
 	width: 25%;
 }
 
-/* Section Projets */
+
+/**********************************************************/
+/******** Section Projet **************/
+/**********************************************************/
+
 
 #projets {
 	margin-top: 300px;
@@ -409,7 +448,7 @@ article a {
 #projets::after {
 	bottom: 0;
 	position: absolute;
-	margin-bottom: -200px;
+	margin-bottom: -180px;
 	content: "";
 	background: rgb(28, 249, 212);
 	height: 70px;
@@ -419,7 +458,10 @@ article a {
 	transform: skew(0deg, -1deg);
 }
 
-/* Section Contact */
+
+/**********************************************************/
+/******** Form Contact **************/
+/**********************************************************/
 
 #contact {
 	margin-top: 130px;
@@ -437,8 +479,6 @@ article a {
 	min-height: 500px;
 	max-width: 1200px;
 }
-
-/* Form Contact */
 
 
 input[type="text"],
@@ -469,19 +509,23 @@ input[type="submit"]:hover {
 .formcontact {
 
 	justify-content: space-between;
-	margin-top: 120px;
+	margin-top: 80px;
 	display: flex;
 	align-items: stretch;
 	margin-bottom: 100px;
 }
 
 .form {
+	width: 600px;
 	max-width: 600px;
 	border-color: #ff52b4;
 	margin-top: 0px;
 }
 
-/* Image Modal  */
+
+/**********************************************************/
+/******** IMG Modal  **************/
+/**********************************************************/
 
 .imgProjet {
 	border-radius: 5px;
@@ -503,8 +547,9 @@ input[type="submit"]:hover {
 }
 
 
-
-/* BLog */
+/**********************************************************/
+/******** Blog **************/
+/**********************************************************/
 
 
 #blog {
@@ -524,21 +569,12 @@ input[type="submit"]:hover {
 	width: 50%;
 }
 
-#blog::after{
-	bottom: 0;
-	position: absolute;
-	margin-bottom:100px;
-	content: "";
-	background: rgb(28, 249, 212);
-	height: 70px;
-	display: block;
-	width: 100%;
-	transform-origin: left top;
-	transform: skew(0deg, -1deg);
-}
 
 
 
+/**********************************************************/
+/******** Media Query**************/
+/**********************************************************/
 
 
 @media screen and (max-width:1530px) {
@@ -1044,4 +1080,41 @@ input[type="submit"]:hover {
     .listprojets{
         width: 80%;
     }
+}
+
+
+
+
+/**********************************************************/
+/******** Exo Woo commerce A supprimer avant la fin du projet  **************/
+/**********************************************************/
+#product-103{
+	display: flex;
+	justify-content: center;
+}
+
+.woocommerce-product-gallery__image{
+	padding: 20px;
+	padding-top: 200px;
+	width: 100%;
+	height: auto;
+}
+.summary.entry-summary{
+ margin-top: 170px;
+}
+
+.woocommerce-tabs.wc-tabs-wrapper{
+	display: flex;
+	margin-top: 200px;
+	justify-content: end;
+}
+.wp-block-social-links.is-style-logos-only .wp-social-link-google{
+	color: #13fdd7 !important;
+}
+
+
+
+
+.wp-block-social-links{
+	color: #04aa6d;
 }
