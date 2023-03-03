@@ -43,6 +43,8 @@ btnToggle.addEventListener("click", () => {
     body.classList.add("light")
     body.classList.remove("dark")
     btnToggle.innerHTML = "Go Dark"
+
+    // Custom Event pour Changer le Style de la Map Google
     const event = new CustomEvent("changestyle", { detail: 'light' });
     document.body.dispatchEvent(event)
 
@@ -50,6 +52,8 @@ btnToggle.addEventListener("click", () => {
     body.classList.add("dark")
     body.classList.remove("light")
     btnToggle.innerHTML = "Go Light"
+
+    // Custom Event pour Changer le Style de la Map Google
     const event = new CustomEvent("changestyle", { detail: 'dark' });
     document.body.dispatchEvent(event)
   }
@@ -70,14 +74,9 @@ btnToggle.addEventListener("click", () => {
 // }
 
 
-
-
-
 const menuburger = document.querySelector(".menuburger");
 const navbar = document.getElementById("navbar");
 const linknav = document.querySelectorAll(".menuheader a");
-
-
 
 linknav.forEach((link) => {
   link.addEventListener("click", () => {
@@ -410,7 +409,7 @@ function initMap() {
           "visibility": "on"
         },
         {
-          "color": "#1d1d1d"
+          "color": "#f2f2f2"
         }
       ]
     },
@@ -446,7 +445,7 @@ function initMap() {
       "elementType": "geometry",
       "stylers": [
         {
-          "color": "#ff52b4"
+          "color": "#F2BE5C"
         },
         {
           "visibility": "on"
@@ -479,7 +478,7 @@ function initMap() {
           "visibility": "on"
         },
         {
-          "color": "#1cf9db"
+          "color": "#033E8C"
         }
       ]
     },
@@ -542,7 +541,7 @@ function initMap() {
       "elementType": "all",
       "stylers": [
         {
-          "color": "#f1f1f1"
+          "color": "#1d1d1d"
         },
         {
           "visibility": "on"
