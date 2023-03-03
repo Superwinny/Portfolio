@@ -191,10 +191,11 @@ img.mfp-img {
 	padding-top: 160px;
   }
   .mfp-title {
-	text-align: center;
+	display: none;
+	/* text-align: center;
 	line-height: 40px;
 	color: #f1f1f1;
-	padding-right: 0;
+	padding-right: 0; */
   }
   .mfp-bottom-bar {
 	margin-top: -200px;
