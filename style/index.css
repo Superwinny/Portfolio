@@ -161,8 +161,10 @@ body.light .mfp-container{
 
 }
 img.mfp-img {
+	/* width: 100%; */
 	box-sizing: unset;
 	margin: 0;
+	padding: 0;
 }
 
 .mfp-container {
