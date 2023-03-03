@@ -137,7 +137,7 @@ body.light .mfp-counter{
 }
 body.light .mfp-container{
 	background-color: #f2f2f2;;
-    border: solid 4px #033E8C;
+   
 }
  body.light .mfp-image-holder .mfp-close, .mfp-iframe-holder button.mfp-close{
 	color: #F2BE5C
@@ -169,7 +169,7 @@ img.mfp-img {
 
 .mfp-container {
 	background-color: #1d1d1d ;
-	border:  solid 2px rgb(28, 249, 212);
+	
 }
 .mfp-close {
    width: 200px;
