@@ -872,6 +872,7 @@ input[type="submit"]:hover {
 	}
 
 	.form {
+		width: 70%;
 		padding-right: 150px;
 		padding-left: 150px;
 	}
@@ -879,7 +880,7 @@ input[type="submit"]:hover {
 	#imgcontact {
 		margin-bottom: -100px;
 		margin-top: 50px;
-		flex-basis: 90%;
+		flex-basis: 100%;
 	}
 
 
@@ -913,9 +914,10 @@ input[type="submit"]:hover {
 	.listprojets {
 		align-items: center;
 		margin-left: 0;
-		padding: 35px;
+		padding: 25px;
 		margin-right: 0;
 		gap: 12px;
+		width: 70%;
 	}
 
 	article {
@@ -1046,7 +1048,7 @@ input[type="submit"]:hover {
 
 	#navbar .menuburger {
 		top: 50px;
-		right: 80px;
+		right: 60px;
 	}
 
 	.form {
