@@ -161,7 +161,6 @@ body.light .mfp-container{
 
 }
 img.mfp-img {
-	/* width: 100%; */
 	box-sizing: unset;
 	margin: 0;
 	padding: 0;
@@ -252,9 +251,6 @@ body.light .showlight{
 body.light .showdark{
 	display: none;
 }
-/* body.light #img-logo-light{
-	display: block;
-} */
 
 /**********************************************************/
 /******** Navbar Menu **************/
@@ -1125,39 +1121,3 @@ input[type="submit"]:hover {
     }
 }
 
-
-
-
-/**********************************************************/
-/******** Exo Woo commerce A supprimer avant la fin du projet  **************/
-/**********************************************************/
-#product-103{
-	display: flex;
-	justify-content: center;
-}
-
-.woocommerce-product-gallery__image{
-	padding: 20px;
-	padding-top: 200px;
-	width: 100%;
-	height: auto;
-}
-.summary.entry-summary{
- margin-top: 170px;
-}
-
-.woocommerce-tabs.wc-tabs-wrapper{
-	display: flex;
-	margin-top: 200px;
-	justify-content: end;
-}
-.wp-block-social-links.is-style-logos-only .wp-social-link-google{
-	color: #13fdd7 !important;
-}
-
-
-
-
-.wp-block-social-links{
-	color: #04aa6d;
-}
