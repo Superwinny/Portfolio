@@ -591,3 +591,4 @@ document.body.addEventListener('changestyle', function(event){
 }
 
 window.initMap = initMap;
+
