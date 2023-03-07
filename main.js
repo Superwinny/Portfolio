@@ -16,12 +16,7 @@
           navigateByImgClick: true,
           preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
         },
-        // image: {
-        //   tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-        //   // titleSrc: function (item) {
-        //   //   return item.el.attr('title') + '<small>by Superwinny</small>';
-        //   // }
-        // }
+        
 
       });
 
@@ -61,17 +56,6 @@ btnToggle.addEventListener("click", () => {
 
 })
 
-// Function Change Img
-
-// const image = document.getElementById("img-logo");
-// function changerImage() {
-//   if (image.getAttribute('src') == "img/SuperwinnyLogo.svg") {
-//     image.src = "img/SuperwinnyLogo-Light.svg";
-//   }
-//   else {
-//     image.src = "img/SuperwinnyLogo.svg";
-//   }
-// }
 
 
 const menuburger = document.querySelector(".menuburger");
