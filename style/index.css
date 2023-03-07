@@ -589,20 +589,20 @@ input[type="submit"]:hover {
 
 #blog {
 	margin-top: 50px;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
 	position: relative;
 	padding-top: 150px;
+	
 }
 
-.blog-intro {
-	padding-left: 100px;
-	margin-top: 0;
-	flex-basis: 33%;
-	flex-shrink: 1;
-	width: 50%;
+.articles-blog h2{
+	text-align: center;
 }
+
+.articles-blog article {
+	width: 100%;
+	
+}
+
 
 
 
