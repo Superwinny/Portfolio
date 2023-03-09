@@ -14,7 +14,7 @@ Text Domain: Portfolio.DDS
 h1 {
 	font-family: "Shrikhand", cursive;
 	color: #13fdd7;
-	font-size: 60px;
+	font-size: 55px;
 	-webkit-text-stroke: 2px #13fdd7;
 	text-transform: uppercase;
 	/* Enlève la couleur intérieur du text */
@@ -148,6 +148,7 @@ body.light .mfp-container{
 
 
 
+
 /**********************************************************/
 /******** Magnific Popup Modification Plugin  **************/
 /**********************************************************/
@@ -230,7 +231,7 @@ img.mfp-img {
 	bottom: 100px;
 }
 #img-logo-light {
-	padding-left: 100px;
+	
 	height: 150px;
 	bottom: 100px;
 }
@@ -260,13 +261,12 @@ ul.menuheader {
 	display: flex;
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
 	padding-right: 100px;
 	overflow: hidden;
 	background-color: #1d1d1d;
 	font-family: "Roboto", sans-serif;
 	font-family: "Solitreo", cursive;
-	font-size: 40px;
+	font-size: 35px;
 }
 
 ul.menuheader li {
@@ -369,7 +369,7 @@ ul.menufooter li a:hover {
 #aboutme::after {
 	bottom: 0;
 	position: absolute;
-	margin-bottom: -120px;
+	margin-bottom: -150px;
 	content: "";
 	background: rgb(28, 249, 212);
 	height: 60px;
@@ -380,9 +380,9 @@ ul.menufooter li a:hover {
 }
 
 .img-aboutme {
-	margin-top: -40px;
+	margin-top: 20px;
 	margin-right: 100px;
-	width: 31%;
+	width: 35%;
 
 }
 
@@ -510,7 +510,7 @@ article {
 }
 
 #imgcontact {
-	flex-basis: 40%;
+	flex-basis: 45%;
 	min-height: 500px;
 	max-width: 1200px;
 }
@@ -542,7 +542,7 @@ input[type="submit"]:hover {
 }
 
 .formcontact {
-
+	width: 100%;
 	justify-content: space-between;
 	margin-top: 80px;
 	display: flex;
@@ -556,7 +556,9 @@ input[type="submit"]:hover {
 	border-color: #ff52b4;
 	margin-top: 0px;
 }
-
+.wpcf7-response-output{
+	display: none;
+}
 
 /**********************************************************/
 /******** IMG Modal  **************/
@@ -586,33 +588,93 @@ input[type="submit"]:hover {
 /******** Blog **************/
 /**********************************************************/
 
-
 #blog {
-	margin-top: 50px;
+	
 	position: relative;
+	padding-left: 100px;
+	padding-right: 100px;
 	padding-top: 150px;
-	
 }
 
-.articles-blog h2{
+.article-blog h2{
 	text-align: center;
+	margin-bottom: 100px;
+
 }
 
-.articles-blog article {
+ .text-article{
+	padding-left: 50px;
+	padding-right: 50px;
+ }
+ 
+.article-blog {
 	width: 100%;
+	margin-top: 100px;
+	box-shadow: 5px 5px 5px rgb(28, 249, 212);
+	margin-bottom: 100px;
+	padding-bottom: 50px;
+	padding-top: 20px;
+}
+.boutton-blog{
+	background-color: rgb(28, 249, 212);
+	color: #000000;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 40px;
+	text-decoration:none;
+	text-align: center;
+	display: inline-block;
+	
 	
 }
+.boutton-blog a{
+	text-decoration: none;
+}
+.boutton-blog:hover{
+	background-color: #04aa6d;
+}
+.date-blog{
+	text-align: right;
+	color: #ff52b4;
+}
 
+/**********************************************************/
+/******** Blog => Permalink => Article **************/
+/**********************************************************/
 
+.text-article ol li{
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+ }
 
+ .auteur-blog{
+	margin-top: 50px;
+	text-align: right;
+	color: #ff52b4;
+}
+.text-article ol li::marker{
+	color: #ff52b4;
+ }
 
 
 /**********************************************************/
 /******** Media Query**************/
 /**********************************************************/
+@media screen and (max-width:1640px) {
+	ul.menuheader li{
+		font-size: 27px;
 
+	}
+}
 
 @media screen and (max-width:1530px) {
+	.img-aboutme {
+		margin-top: 40px;
+		width: 40%;
+	
+	}
 	
 	.form {
 		max-width: 500px;
@@ -646,25 +708,25 @@ input[type="submit"]:hover {
 
 	}
 
-	ul.menuheader li {
-		font-size: 27px;
+	
 
-
-	}
-
-	.img-aboutme {
-		margin-right: 100px;
-		margin-top: -15px;
-	}
-
+	
 	.skillsicons {
 		flex-basis: 28%;
 		gap: 15px;
 		margin-right: 160px;
 		margin-top: 235px;
 	}
+	h1{
+		font-size: 50px;
+	}
 }
-
+@media screen and (max-width:1450px) {
+	ul.menuheader li{
+		font-size: 24px;
+		margin-left: 60px;
+	}
+}
 @media screen and (max-width:1316px) {
 	
 	#imgcontact {
@@ -697,22 +759,20 @@ input[type="submit"]:hover {
 		margin-top: 190px;
 	}
 
-	ul.menuheader li {
-		margin-left: 60px;
-		font-size: 24px;
+	ul.menuheader  {
+		padding-right: 80px;
 	}
 
 	#img-logo {
 		padding-left: 80px;
 	}
+	
 
 	.abouttext {
 		padding-left: 80px;
 	}
 
-	.img-aboutme {
-		margin-right: 100px;
-	}
+	
 
 	p {
 		font-size: 16px;
@@ -722,8 +782,18 @@ input[type="submit"]:hover {
 		font-size: 45px;
 	}
 }
+@media screen and (max-width:1164px) {
 
+	ul.menuheader li{
+		font-size: 22px;
+		margin-left: 10px;
+	}
+}
 @media screen and (max-width:1100px) {
+	.img-aboutme{
+		width: 42%;
+		margin-top: 50px;
+	}
 	.form {
 		max-width: 400px;
 	}
@@ -762,15 +832,6 @@ input[type="submit"]:hover {
 		margin-top: 180px;
 	}
 
-	.img-aboutme {
-		margin-top: -15px;
-		width: 36%;
-	}
-
-	ul.menuheader li {
-		margin-left: 36px;
-	}
-
 	p {
 		font-size: 15px;
 	}
@@ -781,6 +842,10 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width:1000px) {
+	.img-aboutme{
+		margin-top: 45px;
+		width: 46%;	
+	}
 	#imgcontact {
 		flex-basis: 42%;
 	}
@@ -801,10 +866,7 @@ input[type="submit"]:hover {
 		margin-top: 190px;
 	}
 
-	.img-aboutme {
-		margin-top: -15px;
-		width: 37%;
-	}
+	
 
 	p {
 		font-size: 14px;
@@ -822,10 +884,29 @@ input[type="submit"]:hover {
 
 
 @media screen and (max-width:900px) {
+	.article-blog{
+		margin-top: 50px;
+	}
+	#blog h1{
+		text-align: center;
+	}
+	#blog{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.img-aboutme{
+		position: absolute;
+		left: 200px;
+		opacity: 0.5;
+		width:50%;
+		margin-top: 0;
+		filter: opacity(0.4)
+		
+	}
 	.skillsicons {
 		padding: 0;
 		margin: 0;
-		flex-basis: 35%;
+		flex-basis: 40%;
 		padding-left: 35px;
 		margin-bottom: 90px;
 		margin-top: 50px; 
@@ -837,13 +918,7 @@ input[type="submit"]:hover {
 		justify-content: center ;
 	}
 
-	#aboutme{
-		background-image: url(../img/ImgAboutMe.svg);
-		background-repeat: no-repeat;
-		background-position: right;
-		background-position-y: 100px;
-		background-size: contain;
-	}
+	
 
 	ul.iconsfooter li img {
 		width: 20px;
@@ -888,6 +963,7 @@ input[type="submit"]:hover {
 	}
 
 	.form {
+		max-width: none;
 		width: 70%;
 		padding-right: 150px;
 		padding-left: 150px;
@@ -958,10 +1034,7 @@ input[type="submit"]:hover {
 		padding-bottom: 0;
 	}
 
-	.img-aboutme {
-		 display: none;
-	}
-
+	
 	#navbar .menuburger {
 		position: absolute;
 		max-width: 60px;
@@ -977,10 +1050,7 @@ input[type="submit"]:hover {
 		align-items: center;
 	}
 
-	#navbar #img-logo {
-		top: 30px;
-		right: 30px;
-	}
+	
 
 	ul.menuheader {
 		top: 0;
@@ -1005,6 +1075,7 @@ input[type="submit"]:hover {
 	#img-logo {
 		padding-left: 50px;
 	}
+	
 
 	.abouttext {
 		display: flex;
@@ -1016,10 +1087,33 @@ input[type="submit"]:hover {
 		flex-basis: 100%;
 		padding-right: 50px;
 		padding-bottom: 50px;
+		
 	}
 
 }
+@media screen and (max-width:750px) {
+	.img-aboutme{
+		left: 150px;
+		top: 280px;
+		width: 50%;
+	}
+	#aboutme::after {
+		
+		top: 730px;
+	}
+}
 @media screen and (max-width:650px) {
+	.form {
+		padding-right: 60px;
+		padding-left: 60px;
+		width: 80%;
+	}
+	.img-aboutme{
+		left: 120px;
+		top: 300px;
+		width: 55%;
+	}
+	
 	.skillsicons {
 		flex-basis: 40%;
 		padding-left:5px;
@@ -1027,7 +1121,15 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width:550px) {
-
+	.skillstext {
+		margin-top: 70px;
+	}
+	.img-aboutme{
+		left: 60px;
+		top: 300px;
+		width: 60%;
+	}
+	
 	.mfp-image-holder .mfp-close, .mfp-iframe-holder button.mfp-close {
             font-size: 100px;
      }
@@ -1039,7 +1141,7 @@ input[type="submit"]:hover {
 	.skillsicons {
 		padding: 0;
 		margin: 0;
-		flex-basis: 45%;
+		flex-basis: 50%;
 		padding-left: 15px;
 		 margin-bottom: 50px;
 	   margin-top: 0;
@@ -1061,16 +1163,15 @@ input[type="submit"]:hover {
 	#navbar #img-logo {
 		padding-left: 20px;
 	}
+	
+
 
 	#navbar .menuburger {
 		top: 50px;
 		right: 60px;
 	}
 
-	.form {
-		padding-right: 60px;
-		padding-left: 60px;
-	}
+	
 
 	ul.menufooter {
 		display: flex;
@@ -1099,7 +1200,58 @@ input[type="submit"]:hover {
 	}
 }
 
+@media screen and (max-width:450px) {
+	.text-article{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.article-blog h2{
+		margin-bottom: 50px;
+	}
+	#blog{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.skillstext {
+		margin-top: 0px;
+	}
+	.img-aboutme{
+		left: 30px;
+		top: 330px;
+		width: 75%;
+	}
+}
 @media screen and (max-width:390px) {
+	
+	h2{
+		font-size: 22px;
+	}
+	.form {
+		padding-right: 30px;
+		padding-left: 30px;
+	
+	}
+	
+	#aboutme::after {
+		top: 650px;
+	}
+
+
+	#skills{
+		padding-top: 80px;
+	}
+	.skillstext {
+		margin-top: 75px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.img-aboutme{
+		left: 0px;
+		top: 210px;
+		width: 90%;
+	}
 	
 	#navbar #img-logo {
 		padding-left: 0;
@@ -1110,7 +1262,8 @@ input[type="submit"]:hover {
 	}
 
 	h1{
-		font-size: 35px;
+		font-size: 28px;
+		-webkit-text-stroke: 1px #13fdd7
 	}
 
     article {
@@ -1119,5 +1272,62 @@ input[type="submit"]:hover {
     .listprojets{
         width: 90%;
     }
+	.abouttext{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#aboutme{
+		padding-top: 80px;
+	}
 }
+@media screen and (max-width:350px) {
+	#blog {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.text-article {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#aboutme::after {
+		top: 700px;
+	}
+
+	#skills{
+		padding-top: 80px;
+	}
+	.skillstext {
+		margin-top: 35px;
+		
+	}
+	
+}
+
+@media screen and (max-width:280px) {
+	#aboutme::after {
+		top: 700px;
+	}
+
+	#skills{
+		padding-top: 50px;
+	}
+	.skillstext {
+		margin-top: 0px;
+		
+	}
+	.img-aboutme {
+		
+		top: 300px;
+		width: 100%;
+	}
+	#navbar .menuburger {
+	
+		right: 30px;
+	}
+	.skillsicons{
+		flex-basis: 65%;
+		margin-bottom: 0px;
+	}
+}
+
 
