@@ -16,7 +16,7 @@
           navigateByImgClick: true,
           preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
         },
-        
+     
 
       });
 
@@ -37,7 +37,7 @@ btnToggle.addEventListener("click", () => {
   if (body.classList.contains("dark")) {
     body.classList.add("light")
     body.classList.remove("dark")
-    btnToggle.innerHTML = "Go Dark"
+    btnToggle.navigateByImgClick = ""
 
     // Custom Event pour Changer le Style de la Map Google
     const event = new CustomEvent("changestyle", { detail: 'light' });
@@ -46,7 +46,7 @@ btnToggle.addEventListener("click", () => {
   } else if (body.classList.contains("light")) {
     body.classList.add("dark")
     body.classList.remove("light")
-    btnToggle.innerHTML = "Go Light"
+    btnToggle.navigateByImgClick = ""
 
     // Custom Event pour Changer le Style de la Map Google
     const event = new CustomEvent("changestyle", { detail: 'dark' });
@@ -55,8 +55,6 @@ btnToggle.addEventListener("click", () => {
 
 
 })
-
-
 
 const menuburger = document.querySelector(".menuburger");
 const navbar = document.getElementById("navbar");
@@ -71,6 +69,7 @@ linknav.forEach((link) => {
 
 menuburger.addEventListener("click", () => {
   navbar.classList.toggle("mobile-menu")
+
 })
 
 
@@ -575,4 +574,3 @@ document.body.addEventListener('changestyle', function(event){
 }
 
 window.initMap = initMap;
-
