@@ -21,13 +21,10 @@ h1 {
 	-webkit-text-fill-color: transparent;
 }
 h2 {
-	font-family: "Shrikhand", cursive;
+	font-family: "Merriweather", serif;
 	color: #13fdd7;
 	font-size: 30px;
-	-webkit-text-stroke: 1px #13fdd7;
-	text-transform: uppercase;
-	/* Enlève la couleur intérieur du text */
-	-webkit-text-fill-color: transparent;
+	font-weight:normal;
 }
 
 body {
@@ -46,30 +43,27 @@ p {
 /**********************************************************/
 /******** Light/Dark Mode **************/
 /**********************************************************/
-
-
 .btn-toggle{
+	width: 50px;
 	position: absolute;
-	width: 80px;
-	height: 80px;
-	background-color: white;
-	border-radius: 50%;
-	display: flex;
-	border: 2px solid blue;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	color: black;
+	left: 400px;
+	top: 20px;
+	
+}
+body
 
+.btn-toggle img{
+
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
 }
 body.light{
 	color: #1d1d1d;;
 	background: #f2f2f2 ;
 }
-body.light .btn-toggle {
-	background:#1d1d1d;
-	color: #f2f2f2;
-}
+
 body.light #navbar{
 	background-color: #f2f2f2;
 	border-bottom: 3px solid #1d1d1d;
@@ -146,9 +140,26 @@ body.light .mfp-container{
 	box-shadow: 10px 10px 10px#033E8C;
 }
 
+body.light .boutton-blog {
+    background-color:#033E8C;
+}
+body.light .boutton-blog a {
+	color:  #f2f2f2;;
+}
+body.light .date-blog{
+	color:#F2BE5C
+}
+body.light .article-blog{
+	box-shadow: 5px 5px 5px#033E8C;
 
-
-
+}
+body.light .auteur-blog {
+    
+    color:#033E8C;
+}
+body.light .text-article ol li::marker {
+    color:#033E8C;
+}
 /**********************************************************/
 /******** Magnific Popup Modification Plugin  **************/
 /**********************************************************/
@@ -231,7 +242,7 @@ img.mfp-img {
 	bottom: 100px;
 }
 #img-logo-light {
-	
+	padding-left: 100px;
 	height: 150px;
 	bottom: 100px;
 }
@@ -252,6 +263,13 @@ body.light .showlight{
 body.light .showdark{
 	display: none;
 }
+body.light img.showlight{
+	display: block;
+}
+body.light img.showdark{
+	display: none;
+}
+
 
 /**********************************************************/
 /******** Navbar Menu **************/
@@ -264,9 +282,9 @@ ul.menuheader {
 	padding-right: 100px;
 	overflow: hidden;
 	background-color: #1d1d1d;
-	font-family: "Roboto", sans-serif;
-	font-family: "Solitreo", cursive;
-	font-size: 35px;
+	font-family: "Merriweather", serif;
+	font-weight:normal;
+	font-size: 30px;
 }
 
 ul.menuheader li {
@@ -322,6 +340,8 @@ ul.menufooter {
 	border-top: 3px solid #f1f1f1;
 	justify-content: flex-start;
 	align-items: flex-start;
+	font-family: "Merriweather", serif;
+	font-weight:normal;
 }
 
 
@@ -369,7 +389,7 @@ ul.menufooter li a:hover {
 #aboutme::after {
 	bottom: 0;
 	position: absolute;
-	margin-bottom: -150px;
+	margin-bottom: -110px;
 	content: "";
 	background: rgb(28, 249, 212);
 	height: 60px;
@@ -394,7 +414,7 @@ ul.menufooter li a:hover {
 #skills::after {
 	bottom: 0;
 	position: absolute;
-	margin-bottom: -360px;
+	margin-bottom: -260px;
 	content: "";
 	background: rgb(28, 249, 212);
 	height: 60px;
@@ -429,7 +449,7 @@ ul.menufooter li a:hover {
 	flex-basis: 24%;
 	gap: 15px;
 	margin-right: 270px;
-	margin-top: 220px;
+	margin-top: 250px;
 }
 
 .skillsicons img {
@@ -443,9 +463,9 @@ ul.menufooter li a:hover {
 
 
 #projets {
-	margin-top: 300px;
+	margin-top: 150px;
 	position: relative;
-	padding-top: 140px;
+	padding-top: 180px;
 }
 
 .projets {
@@ -483,7 +503,7 @@ article {
 #projets::after {
 	bottom: 0;
 	position: absolute;
-	margin-bottom: -180px;
+	margin-bottom: -230px;
 	content: "";
 	background: rgb(28, 249, 212);
 	height: 70px;
@@ -502,7 +522,7 @@ article {
 	margin-top: 130px;
 	position: relative;
 	padding: 0 100px;
-	padding-top: 140px;
+	padding-top: 170px;
 }
 
 .contact {
@@ -712,10 +732,10 @@ input[type="submit"]:hover {
 
 	
 	.skillsicons {
-		flex-basis: 28%;
+		flex-basis: 30%;
 		gap: 15px;
 		margin-right: 160px;
-		margin-top: 235px;
+		margin-top: 260px;
 	}
 	h1{
 		font-size: 50px;
@@ -756,7 +776,7 @@ input[type="submit"]:hover {
 		flex-basis: 30%;
 		gap: 14px;
 		margin-right: 180px;
-		margin-top: 190px;
+		margin-top: 230px;
 	}
 
 	ul.menuheader  {
@@ -786,7 +806,7 @@ input[type="submit"]:hover {
 
 	ul.menuheader li{
 		font-size: 22px;
-		margin-left: 10px;
+		margin-left: 15px;
 	}
 }
 @media screen and (max-width:1100px) {
@@ -828,8 +848,8 @@ input[type="submit"]:hover {
 	}
 
 	.skillsicons {
-		margin-right: 170px;
-		margin-top: 180px;
+		margin-right: 130px;
+		margin-top: 230px;
 	}
 
 	p {
@@ -862,9 +882,11 @@ input[type="submit"]:hover {
 	}
 
 	.skillsicons {
-		margin-right: 150px;
-		margin-top: 190px;
+		margin-right: 110px;
+		flex-basis: 33%;
 	}
+		
+	
 
 	
 
@@ -884,6 +906,9 @@ input[type="submit"]:hover {
 
 
 @media screen and (max-width:900px) {
+	.btn-toggle {
+		top: 70px;
+	}
 	.article-blog{
 		margin-top: 50px;
 	}
@@ -908,7 +933,7 @@ input[type="submit"]:hover {
 		margin: 0;
 		flex-basis: 40%;
 		padding-left: 35px;
-		margin-bottom: 90px;
+		margin-bottom: 110px;
 		margin-top: 50px; 
 	}
 
@@ -1092,6 +1117,10 @@ input[type="submit"]:hover {
 
 }
 @media screen and (max-width:750px) {
+	.btn-toggle {
+		top: 70px;
+		left: 350px;
+	}
 	.img-aboutme{
 		left: 150px;
 		top: 280px;
@@ -1103,6 +1132,10 @@ input[type="submit"]:hover {
 	}
 }
 @media screen and (max-width:650px) {
+	.btn-toggle {
+		top: 70px;
+		left: 300px;
+	}
 	.form {
 		padding-right: 60px;
 		padding-left: 60px;
@@ -1121,6 +1154,13 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width:550px) {
+	.btn-toggle {
+		
+		left: 250px;
+	}
+	.article-blog h2 {
+		margin-bottom: 70px;
+	}
 	.skillstext {
 		margin-top: 70px;
 	}
@@ -1188,12 +1228,12 @@ input[type="submit"]:hover {
 		justify-content: flex-end;
 		flex-direction: column;
 		align-items: flex-end;
-		margin-top: -115px;
+		margin-top: -190px;
 	}
 
 	ul.iconsfooter li img {
-		width: 18px;
-		margin-top: 12px;
+
+		margin-top: 30px;
 	}
 	h2{
 		font-size:18px;
@@ -1201,6 +1241,10 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width:450px) {
+	.btn-toggle {
+		top: 130px;
+		left: 200px;
+	}
 	.text-article{
 		padding-left: 20px;
 		padding-right: 20px;
@@ -1281,6 +1325,14 @@ input[type="submit"]:hover {
 	}
 }
 @media screen and (max-width:350px) {
+	ul.menufooter {
+		
+		padding: 50px 50px 50px;
+
+	}	ul.iconsfooter {
+
+		margin-left: 200px;
+	}
 	#blog {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -1304,6 +1356,9 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width:280px) {
+	.btn-toggle {
+		left: 180px;
+	}
 	#aboutme::after {
 		top: 700px;
 	}
@@ -1322,7 +1377,7 @@ input[type="submit"]:hover {
 	}
 	#navbar .menuburger {
 	
-		right: 30px;
+		right: 60px;
 	}
 	.skillsicons{
 		flex-basis: 65%;
