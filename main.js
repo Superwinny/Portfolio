@@ -55,6 +55,16 @@ btnToggle.addEventListener("click", () => {
 
 
 })
+const menuLinks = document.querySelectorAll('ul.menuheader li a');
+
+menuLinks.forEach(function(link) {
+  link.addEventListener('click', function() {
+    menuLinks.forEach(function(link) {
+      link.classList.remove('active');
+    });
+    this.classList.add('active');
+  });
+});
 
 const menuburger = document.querySelector(".menuburger");
 const navbar = document.getElementById("navbar");

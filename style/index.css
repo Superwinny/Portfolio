@@ -300,12 +300,12 @@ ul.menuheader li a {
 	text-decoration: none;
 }
 
-/* Change the menu color on hover */
-ul.menuheader li a:hover {
-	color: #ff52b4;
-	text-decoration: none;
+ul.menuheader li a:hover,
+ul.menuheader li a:focus,
+ul.menuheader li a:active {
+  color: #ff52b4;
+  text-decoration: none;
 }
-
 
 /**********************************************************/
 /******** Footer **************/
